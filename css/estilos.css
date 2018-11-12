@@ -1,0 +1,194 @@
+body, html{
+	height: 100vh;
+}
+
+body{
+    
+	margin: 0; 
+    padding: 0;
+	/*display: grid;
+	grid-template-columns: 65% 35%;
+	grid-template-rows: 7% 93% auto 7%; 
+	grid-template-areas: 
+		"header header"
+		"section section"
+		"sect1 sect2"
+		"footer footer";*/
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	
+	/*grid-area: header;*/
+	background-color: rgba(207, 207, 207, 0.856);
+	z-index: 100;
+}
+
+section:nth-of-type(1).principal{
+	width: 100%;
+	height: 100vh;
+	background: url("../imagenes/fondo.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	/*grid-area: section;*/
+}
+
+/*section:nth-of-type(3){
+	grid-area: sect2;
+	background-color: #6d9fd2;
+}*/
+
+
+
+#nombre{
+    font-size: 25px;
+    color: black;
+}
+
+#nombre:hover{
+    background: none;
+}
+
+/*ESTILOS CONTENIDO PÁGINA*/
+p{
+	font-size: 20px;
+}
+
+#principio{
+	padding-top: 10%;
+}
+
+article{
+	font-size: 25px;
+}
+
+.descripcion{
+	color: grey;
+	border-top: 3px solid rgba(187, 187, 187, 0.4);
+	padding-bottom: 3%;
+}
+
+.imDescr{
+	padding-top: 10%;
+	padding-bottom: 15%;
+}
+
+#imWeb{
+	width: 200%;
+	height: 130%;
+	border-radius: 20px;
+}
+
+section{
+	text-align: center;
+	color: white;
+}
+
+div>a{
+	color: grey;
+}
+
+section>h1{
+	text-transform: uppercase;
+}
+
+article>img{
+	width: 100%;
+}
+
+#izq, #der{
+	padding-top: 8em;
+	cursor: pointer;
+}
+/*FIN ESTILOS CONTENIDO PÁGINA*/
+
+/*ESTILOS MENU NORMAL*/
+nav{
+    position: fixed;
+	width: 100%;
+	padding: 1% 10%;
+	box-sizing: border-box;
+	transition: .5s;
+	color: black;
+	z-index: 100;
+}
+
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+
+	color: black;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+}
+
+nav ul li a:focus{
+	outline: none;
+}
+
+nav ul li a.pos{
+	background: rgba(17, 117, 199, 0.5);
+	color: black;
+	border-radius: 15px;
+}
+
+nav a:hover{
+    background: rgba(17, 117, 199, 0.2);
+	border-radius: 15px;
+	transition: .4;
+	cursor: pointer;
+}
+/*FIN ESTILOS MENU NORMAL*/
+
+/*ESTILOS MENU SCROLL*/
+/*nav.black{
+	background: rgba(0, 0, 0, 0.9);
+	height: 14%;
+	padding: 10px 90px;
+}
+nav.black ul li a{
+	color:#fff;
+}
+nav.black ul li a.activado{
+	background:  #EFC017 ;
+	color: black;
+	border-radius: 6px;
+}
+nav.black a:hover{
+	background: #746B6B;
+	border-radius: 3px;
+	transition: 5;
+	color:black;
+	cursor: pointer;
+}
+/*FIN ESTILOS MENU SCROLL*/
+
+
+
+/*ESTILOS PIE DE PAGINA*/
+
+
+footer{
+	background-color: rgba(207, 207, 207, 0.856);
+    width: 100%;
+    height: 6%;
+    bottom: 0px;
+    color: black;
+}
+
+.pie{
+    padding-left: 27%;
+}
+/*FIN ESTILOS PIE DE PAGINA*/

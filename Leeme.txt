@@ -1,0 +1,4 @@
+-El script para cambiar de imagenes se encuentra en el archivo script.js
+Lo unico que hay en ese script son dos funciones, una para cambiar de imagen a la anterior y otra para cambiar a la siguiente.
+
+-En index.html entre las lineas 52 y 62 se encuentra el codigo en el que inserto los iconos de anterior y siguiente y la primera imagen.
